@@ -14,7 +14,7 @@ loop do
             book = gets.chomp
             puts "rating?"
             rating= gets.to_f
-            books[book]=rating
+            books[book.to_sym]=rating
             puts "your list: "
             puts books
         when "no"
